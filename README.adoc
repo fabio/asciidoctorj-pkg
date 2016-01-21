@@ -20,9 +20,9 @@ The package distribution requires Java, version 8 is recommended.
 Installation
 ------------
 
-Unpack the archive in a direcotry and add the 'bin' directory inside it to the
-PATH environment variable.  Then run the command +asciidoctorj.bat+ on Windows
-or +asciidoctorj.sh+ on Linux or Mac OS X.
+Unpack the archive in a direcotry and add the +bin+ directory unpacked to the
+_PATH_ environment variable.  Then run the command `asciidoctorj.bat` on
+Windows, or `asciidoctorj.sh` on Linux or Mac OS X.
 
 .Windows
 -----------------------------------------------------------------------
@@ -48,12 +48,12 @@ C:>cd asciidoctorj\examples\article
 C:>asciidocj.bat article.txt
 -----------------------------------------------------------------------
 
-.Convert into HTML, icons with numbering sections and table of contents
+.Convert into HTML, with icons, numbering sections and table of contents
 -----------------------------------------------------------------------
 C:>asciidocj.bat -a icons=font -n -a toc article.txt
 -----------------------------------------------------------------------
 
-.Convert into PDF, wirh iconsi, numbering sections and table of contents
+.Convert into PDF, with icons, numbering and table of contents
 -----------------------------------------------------------------------
 C:>asciidocj.bat -a icons=font -n -a toc=right -b pdf article.txt
 -----------------------------------------------------------------------
