@@ -1,0 +1,59 @@
+AsciidoctorJ Package Distribution
+=================================
+Fabio Inguaggiato <fabio@antura.it>
+v0.9.0, 2016-01-21
+
+
+AsccidoctorJ Package Distribution.  The aim of this package is to facilitate
+the usage of AsciiDoc document format on Windows systems.  Since a native
+Windows installer is not available, the idea is to distribute an archive
+containing AsciidoctorJ JAR files and simple wrapper scripts to run the
+command line interface.
+
+
+Requirements
+------------
+
+The package distribution requires Java, version 8 is recommended.
+
+
+Installation
+------------
+
+Unpack the archive in a direcotry and add the 'bin' directory inside it to the
+PATH environment variable.  Then run the command +asciidoctorj.bat+ on Windows
+or +asciidoctorj.sh+ on Linux or Mac OS X.
+
+.Windows
+-----------------------------------------------------------------------
+C:\>set PATH=%PATH%;C:\asciidoctorj\bin
+C:\>asciidoctorj.bat
+-----------------------------------------------------------------------
+
+.Linux or Mac OS X
+-----------------------------------------------------------------------
+$ export PATH=$PATH:~/j/asciidoctorj/bin
+$ asciidoctorj.sh
+-----------------------------------------------------------------------
+
+
+Examples
+--------
+
+Some AsciiDoc example documents are provided in the +examples+ directory.
+
+.Convert document into HTML
+-----------------------------------------------------------------------
+C:>cd asciidoctorj\examples\article
+C:>asciidocj.bat article.txt
+-----------------------------------------------------------------------
+
+.Convert into HTML, icons with numbering sections and table of contents
+-----------------------------------------------------------------------
+C:>asciidocj.bat -a icons=font -n -a toc article.txt
+-----------------------------------------------------------------------
+
+.Convert into PDF, wirh iconsi, numbering sections and table of contents
+-----------------------------------------------------------------------
+C:>asciidocj.bat -a icons=font -n -a toc=right -b pdf article.txt
+-----------------------------------------------------------------------

@@ -1,0 +1,8 @@
+*/*~
+*/*.DS_Store
+*/*.git*
+*/*.swp
+*/.dist-exclude
+*/bin/dist.sh
+*/dist
+*/test
